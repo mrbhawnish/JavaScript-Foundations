@@ -12,7 +12,7 @@ The module challenge is the afternoon project or assignment that students work t
 - understand and be able to use different operators.
 - write a basic for loop / while loop.
 - write control flow using if/else statements.
-- use function declarations, expressions, and arrow
+- use function declarations, expressions, and arroW
 functions and describe their differences
   
 ## Introduction
