@@ -68,7 +68,7 @@ function mortgageCalculator(){
  
  
  
-      return `${name}, your monthly rate is  ${monthlyRate}`
+      return `${name}, your monthly rate is  ${monthlyRate}`;
  }
  
   mortgageCalculator();
@@ -144,16 +144,15 @@ For example, variableInterestRate(200000, 0.04, 30) should console.log:
 "{Name}, with an interest rate of 0.06, your monthly rate is $1199"
 */
 
-function variableInterestRate(principal, interestRate, years){
-  12426	 
+function variableInterestRate(principal, interestRate, years){ 
   
     for (i = interestRate -.02; i <= interestRate + .02; i = i+.005) {
     
-           let monthlyInterestRate = interestRate / 12;
-   let periods = years * 12;
-      let monthlyRate = (principal) * ((monthlyInterestRate) * Math.pow( 1 + monthlyInterestRate,periods)) / (Math.pow( 1 + monthlyInterestRate , periods) -1);
+           let monthlyInterestRate = i / 12;
+           let periods = years * 12;
+           let monthlyRate = (principal) * ((monthlyInterestRate) * Math.pow( 1 + monthlyInterestRate,periods)) / (Math.pow( 1 + monthlyInterestRate , periods) -1);
   
-    console.log("Bhawnish, with an interest rate of " + i + ", your monthly rate is " + monthlyRate);
+    console.log("Bhawnish, with an interest rate of " + i.toFixed(3) +   ", your monthly rate is " + monthlyRate);
   
          }
     }
