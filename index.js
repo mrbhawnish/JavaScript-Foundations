@@ -146,8 +146,9 @@ For example, variableInterestRate(200000, 0.04, 30) should console.log:
 
 function variableInterestRate(principal, interestRate, years){ 
   
+  //for loop starts here
     for (i = interestRate -.02; i <= interestRate + .02; i = i+.005) {
-    
+   
            let monthlyInterestRate = i / 12;
            let periods = years * 12;
            let monthlyRate = (principal) * ((monthlyInterestRate) * Math.pow( 1 + monthlyInterestRate,periods)) / (Math.pow( 1 + monthlyInterestRate , periods) -1);
